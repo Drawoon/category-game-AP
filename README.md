@@ -1,2 +1,115 @@
 # category-game-AP
 Adapting Thomas Colthurst's '45 by 45 connections' to work with archipelago.
+
+# planned changes
+-make a better readme
+-add comments
+-disambiguate variable names in pressButton()
+-remove button-id?
+-make and fill the categories
+-generate random clues
+-add a way to use custom categories (json?)
+-make an interface for building custom categories (low prio)
+-add rename mode
+-add buttons for switching mode
+-add UI to display score, next check, max in logic etc.
+-add zooming and scrolling like archipeladoku
+-add AP integration
+-make the list number on clues red
+-show full clue lists on hover
+-fix layout
+
+# categories
+-geography
+ -countries by continent
+ -capitals of countries
+ -landmarks
+ -geological features
+  -rivers
+  -mountains
+  -islands
+-people
+ -writers
+ -actors
+ -scientists
+-biology
+ -plants
+  -trees
+  -flowers
+  -herbs
+ -animals
+  -mammals
+   -dog breeds
+   -cat breeds
+  -birds
+  -fish/aquatic animals
+  -reptiles
+  -dinosaurs
+  -arthropods/bugs?
+-AP-related
+ -AP games
+ -AP items?
+ -main characters
+ -major characters
+ -locations
+-food
+ -spices
+ -cheeses
+ -pastas
+ -breads
+ -drinks
+  -cocktails
+  -wines
+-art
+ -movies (by actor/genre?)
+ -tv shows
+ -artpieces
+ -comics
+ -musicals
+ -bands by genre
+ -songs by band
+ -memes
+-mythology
+ -gods (by religion?)
+ -monsters (by region)
+ -heroes
+-colors
+-materials
+ -periodic elements
+ -gemstones
+ -fabrics
+ -rock types
+-fields of study
+-languages
+-fandom-related
+ -characters by franchise
+ -creatures by dex
+  -pokemon
+  -dnd monsters
+  -hollow knight enemies
+-linguistics
+ -prepositions
+ -proverbs
+ -malaphors
+ -irregular verbs
+ -pronouns
+-brands by industry
+-products/subsidiaries by company
+-companies by industry
+-olympic sports
+-fallacies
+-musical instruments
+-tools
+-vehicles
+-jobs
+-hobbies
+-furniture?
+-books of the bible?
+-legal doctrines?
+-anatomy
+ -organs
+ -muscles
+ -bones
+-clothes
+-related words by subject
+-building types (factory, hospital, barn, etc.)
