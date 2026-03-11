@@ -4,19 +4,40 @@ const buttonField = document.getElementById('button-field');
 var selectedButton;
 var mode = "solve";
 
-test.addEventListener("click", () => wizardry.innerHTML = Date());
+var seedA = 3531358754;
+var seedB = 976420920;
+var seedC = 1423383887;
+var seedD = 204146484;
+function random(max) { // Implementing sfc32 from PractRand. Thanks bryc from stackoverflow.
+    seedA |= 0; seedB |= 0; seedC |= 0; seedD |= 0;
+    let t = (seedA + seedB | 0) + seedD | 0;
+    seedD = seedD + 1 | 0;
+    seedA = seedB ^ seedB >>> 9;
+    seedB = seedC + (seedC << 3) | 0;
+    seedC = (seedC << 21 | seedC >>> 11);
+    seedC = seedC + t | 0;
+    return Math.floor((t >>> 0) / 4294967296 * max);
+}
+
+test.addEventListener("click", () => wizardry.innerHTML = random(1000));
 test.innerHTML = "skeboop";
 
-const cells = 1600;
-
 const buttonArray = [];
-const clues = [];
-const categories = [];
+const clues = [["apple"], ["pear"], ["banana"], ["pineapple"], ["tomato"], ["hedgehog"], ["pig"], ["sheep"], ["polar bear"], ["doggo"], ["diorite"], ["andesite"], ["granite"], ["basalt"], ["obsidian"], ["up"], ["down"], ["left"], ["right"], ["inside"], ["pi"], ["sqrt 2"], ["2i+1"], ["-0"], ["9"]];
+const categories = ["fruit", "fruit", "fruit", "fruit", "fruit", "mammals", "mammals", "mammals", "mammals", "mammals", "rock types", "rock types", "rock types", "rock types", "rock types", "directions", "directions", "directions", "directions", "directions", "numbers", "numbers", "numbers", "numbers", "numbers"];
 const names = [];
 
+const cells = clues.length;
+
+
 for (let i = 0; i < cells; i++) { // temporary: replace with real clues and categories
-    clues.push([i]);
-    categories.push(i%11);
+    let j = random(i, cells);
+    let clue = clues[j];
+    let cat = categories[j];
+    clues[j] = clues[i];
+    categories[j] = categories[i];
+    clues[i] = clue;
+    categories[i] = cat;
     names.push("");
 }
 
@@ -24,7 +45,6 @@ var columns = 1;
 while ((columns*columns) <= cells) columns++;
 var gridstyle = "";
 for (let i = 0; i < columns; i++) gridstyle += "auto ";
-wizardry.innerHTML = columns;
 buttonField.style.gridTemplateColumns = gridstyle;
 
 for (let i = 0; i < columns*columns; i++){

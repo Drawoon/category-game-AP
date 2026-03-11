@@ -1,0 +1,26 @@
+[
+    {
+        "name": "fruits",
+        "clues": ["apple", "pear", "banana", "pineapple", "tomato", "mango"]
+    },
+    {
+        "name": "mammals",
+        "clues": ["hedgehog", "pig", "sheep", "polar bear", "doggo", "gato"]
+    },
+    {
+        "name": "rock types",
+        "clues": ["diorite", "andesite", "granite", "basalt", "obsidian", "tuff"]
+    },
+    {
+        "name": "directions",
+        "clues": ["up", "down", "left", "right", "inside", "away"]
+    },
+    {
+        "name": "numbers",
+        "clues": ["pi", "sqrt 2", "2i+1", "-0", "9", "8/3"]
+    },
+    {
+        "name": "beans",
+        "clues": ["bean", "bean", "bean", "bean", "bean", "bean"]
+    }
+]

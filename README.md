@@ -18,6 +18,12 @@ Adapting Thomas Colthurst's '45 by 45 connections' to work with archipelago.
 -make the list number on clues red
 -show full clue lists on hover
 -fix layout
+-set up website
+-add score?
+-add settings for disabling duplicate clues
+-add settings for difficulty
+-add animations
+-add sound effects
 
 # categories
 -geography
@@ -87,6 +93,7 @@ Adapting Thomas Colthurst's '45 by 45 connections' to work with archipelago.
   -pokemon
   -dnd monsters
   -hollow knight enemies
+ -minecraft blocks
 -linguistics
  -prepositions
  -proverbs
@@ -103,6 +110,7 @@ Adapting Thomas Colthurst's '45 by 45 connections' to work with archipelago.
 -vehicles
 -jobs
 -hobbies
+-artforms (woodcarving, linocut, watercolor, etc.)
 -furniture?
 -books of the bible?
 -legal doctrines?
@@ -112,4 +120,18 @@ Adapting Thomas Colthurst's '45 by 45 connections' to work with archipelago.
  -bones
 -clothes
 -related words by subject
+ -weather
+ -lgbt+
+-words that rhyme
 -building types (factory, hospital, barn, etc.)
+-keyboard characters/letters (by allphabet?)
+-genres (by artform?)
+-numbers (any kind)
+-crimes
+-medieval weapons
+-file formats
+-biomes
+-constellations
+-moons
+-playing cards
+-tarot cards
